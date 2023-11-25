@@ -1,0 +1,166 @@
+.bodyclass {
+    height: 100vh;
+    width: 100vw;
+    margin: 0rem;
+    overflow: hidden;
+}
+
+.video-back {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    height: 110%;
+    width: 120%;
+    animation: 1s ease-out 0s 1 slideInLeft;
+}
+
+
+* {
+    font-family: Berlin Sans FB;
+    margin: 0;
+    padding: 0;
+}
+
+:hover.navbar-brand{
+    color: rgb(173, 170, 168) !important;
+}
+
+:hover.nav-link{
+    color: white !important;
+}
+
+.navbar-brand {
+    padding-left: 2%;
+    color: white !important;
+}
+
+:hover.logo-img{
+    max-width: 11.3%;
+    cursor: grab;
+}
+
+.logo-img {
+    padding: top 10px;;
+    transition: 0.2s;
+    max-width: 11%;
+    color: white !important;
+
+}
+
+.nav-link {
+    font-size: 1.1vw !important;
+    font-family: Berlin Sans FB;
+    color: rgb(20, 20, 20) !important;
+    margin: 0;
+    padding-right: 2%;
+}
+
+
+.about-pic {
+    width: 40vmin;
+    height: 56vmin;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.6s ease;
+    cursor: pointer;
+    filter: blur(0.7px) grayscale(50%);
+
+}
+
+.skills-pic {
+    width: 40vmin;
+    height: 56vmin;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.6s ease;
+    cursor: pointer;
+    filter: blur(0.7px) grayscale(30%);
+
+}
+
+.projects-pic {
+    width: 40vmin;
+    height: 56vmin;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.6s ease;
+    cursor: pointer;
+    filter: blur(0.7px) grayscale(30%);
+
+}
+
+.contacts-pic {
+    width: 40vmin;
+    height: 56vmin;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.6s ease;
+    cursor: pointer;
+    filter: blur(0.7px) grayscale(100%);
+
+}
+
+.main-page{
+    display: flex;
+    gap: 4vmin;
+    position: absolute;
+    left: 5%;
+    top: 30%;
+
+}
+
+:hover.about-pic {
+    transform: scale(1.2);
+    filter: blur(0);
+}
+
+:hover.skills-pic {
+    transform: scale(1.2);
+    filter: blur(0);
+}
+
+:hover.projects-pic {
+    transform: scale(1.2);
+    filter: blur(0);
+}
+
+:hover.contacts-pic {
+    transform: scale(1.2);
+    filter: blur(0);
+}
+
+
+.bodyclass-about {
+    height: 100vh;
+    width: 100vw;
+    margin: 0rem;
+    overflow: hidden;
+    animation: 1s ease-out 0s 1 slideInLeft;
+
+}
+@keyframes slideInLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+.brand-text {
+    color: #6B240C !important;
+    text-decoration: none !important;
+    size: 4vw !important;
+    padding-left: 2%;
+}
+
+.logomain {
+    padding-left: 10px !important;
+    transition: 0.2s;
+    max-width: 10%;
+}
+
+:hover.logomain {
+    max-width: 12%;
+}
