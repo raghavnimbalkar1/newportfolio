@@ -27,7 +27,7 @@
 }
 
 :hover.nav-link{
-    color: rgb(173, 170, 168) !important;
+    color: white !important;
 }
 
 .navbar-brand {
@@ -36,11 +36,14 @@
 }
 
 :hover.logo-img{
+    max-width: 11.3%;
     cursor: grab;
 }
 
 .logo-img {
-    max-width: 8%;
+    padding: top 10px;;
+    transition: 0.2s;
+    max-width: 11%;
     color: white !important;
 
 }
@@ -48,7 +51,7 @@
 .nav-link {
     font-size: 1.1vw !important;
     font-family: Berlin Sans FB;
-    color: white !important;
+    color: rgb(20, 20, 20) !important;
     margin: 0;
     padding-right: 2%;
 }
@@ -61,7 +64,7 @@
     object-position: center;
     transition: 0.6s ease;
     cursor: pointer;
-    filter: blur(1.25px);
+    filter: blur(1.25px) grayscale(30%);
 
 }
 
@@ -72,7 +75,7 @@
     object-position: center;
     transition: 0.6s ease;
     cursor: pointer;
-    filter: blur(1.25px);
+    filter: blur(1.25px) grayscale(30%);
 
 }
 
@@ -83,7 +86,7 @@
     object-position: center;
     transition: 0.6s ease;
     cursor: pointer;
-    filter: blur(1.25px);
+    filter: blur(1.25px) grayscale(30%);
 
 }
 
@@ -94,7 +97,7 @@
     object-position: center;
     transition: 0.6s ease;
     cursor: pointer;
-    filter: blur(1.25px);
+    filter: blur(1.25px) grayscale(100%);
 
 }
 
@@ -127,3 +130,15 @@
     filter: blur(0);
 }
 
+.abcontent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px 20px;
+    transition: opacity 0.3s ease;
+
+}
