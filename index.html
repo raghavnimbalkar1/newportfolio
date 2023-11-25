@@ -3,11 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/styles.css">
-    <title>Raghav</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>MyFolio</title>
 </head>
-<body>
+<body class="bodyclass">
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a href="#"><img class="navbar-brand logo-img" alt="img" src="images/book.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="#navbarNav" aria-expanded="false" aria-label="Toggle">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item px-3 active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item px-3">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item px-3">
+                    <a class="nav-link" href="#">Skills</a>
+                </li>
+                <li class="nav-item px-3">
+                    <a class="nav-link" href="#">Projects</a>
+                </li>
+                <li class="nav-item px-3">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
     
-    
+    </nav>
+
+
+
+    <div class="main-page">
+        <a href="public/others/about.html"><img class="about-pic" src="https://images.unsplash.com/reserve/LJIZlzHgQ7WPSh5KVTCB_Typewriter.jpg?q=80&w=2796&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""></a>
+        <a href="public/others/skills.html"><img class="skills-pic" src="https://images.unsplash.com/photo-1493612276216-ee3925520721?q=80&w=2864&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""></a>           
+        <a href="public/others/project.html"><img class="projects-pic" src="https://images.unsplash.com/photo-1527525443983-6e60c75fff46?q=80&w=3085&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""></a>
+        <a href="public/others/contact.html"><img class="contacts-pic" src="https://images.unsplash.com/photo-1523966211575-eb4a01e7dd51?q=80&w=2810&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""></a>
+    </div>
+
+
+
+    <div class="video-back">
+        <video autoplay loop muted plays-inline>
+            <source src="images/background.mp4" type="video/mp4"> 
+        </video>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="public/index.js"></script>
 </body>
 </html>

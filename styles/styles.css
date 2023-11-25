@@ -1,8 +1,90 @@
-.body {
+.bodyclass {
     height: 100vh;
     width: 100vw;
-    background-color: black;
     margin: 0rem;
     overflow: hidden;
 }
 
+.video-back {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    height: 110%;
+    width: 120%;
+
+}
+
+
+* {
+    font-family: Berlin Sans FB;
+    margin: 0;
+    padding: 0;
+}
+
+:hover.navbar-brand{
+    color: rgb(173, 170, 168) !important;
+}
+
+:hover.nav-link{
+    color: rgb(173, 170, 168) !important;
+}
+
+.navbar-brand {
+    padding-left: 2%;
+    color: white !important;
+}
+
+:hover.logo-img{
+    cursor: grab;
+}
+
+.logo-img {
+    max-width: 8%;
+    color: white !important;
+
+}
+
+.nav-link {
+    font-size: 1.1vw !important;
+    font-family: Berlin Sans FB;
+    color: white !important;
+    margin: 0;
+    padding-right: 2%;
+}
+
+
+.about-pic {
+    width: 40vmin;
+    height: 56vmin;
+    object-fit: cover;
+    object-position: center;
+}
+
+.skills-pic {
+    width: 40vmin;
+    height: 56vmin;
+    object-fit: cover;
+    object-position: center;}
+
+.projects-pic {
+    width: 40vmin;
+    height: 56vmin;
+    object-fit: cover;
+    object-position: center;}
+
+.contacts-pic {
+    width: 40vmin;
+    height: 56vmin;
+    object-fit: cover;
+    object-position: center;
+}
+
+.main-page{
+    display: flex;
+    gap: 4vmin;
+    position: absolute;
+    left: 5%;
+    top: 30%;
+
+}
