@@ -2,7 +2,7 @@
     height: 100vh;
     width: 100vw;
     margin: 0rem;
-    overflow: scroll;
+    overflow: visible;
     animation: 1s ease-out 0s 1 slideInLeft;
 }
 
@@ -52,6 +52,7 @@
     .skills-pic,
     .projects-pic,
     .contacts-pic {
+        filter: none !important;
         display: inline-block; /* Change the display property for mobile screens */
         width: 100%; /* Make elements occupy full width */
         /* Additional styles as needed */
@@ -125,9 +126,10 @@
     display: inline-flexbox;
     gap: 4vmin;
     position: absolute;
-    right: 5%;
+    right: 5px;
     left: 5%;
-    top: 30%;
+    top: 25%;
+    overflow: visible;
 
 }
 
@@ -190,4 +192,355 @@
     clear: both; /* Clears elements above and displays this on a new line */
     margin-top: 20px; /* Adjust as needed for spacing */
     
+}
+
+
+
+.fixed-nav {
+    position: fixed;
+    top: 20px; /* Adjust the top position as needed */
+    left: 20px; /* Adjust the left position as needed */
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+.fixed-nav img {
+    width: 50px; /* Set the width of the image */
+    height: auto; /* Maintain aspect ratio */
+    /* Additional styling as needed */
+}
+
+
+.about-section {
+    padding-top: 2%;
+    padding-bottom: 5%;
+    padding-left: 25%;
+    padding-right: 25%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    color: #1f1e1e; /* Text color for better visibility on video background */
+  }
+  
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+  }
+  
+#video-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .about-section h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #6a43b8;
+  }
+  
+  .about-section p {
+    font-family: 'Lato', sans-serif;
+    position: relative;
+    z-index: 1;
+    text-align: left;
+    font-size: 1.4em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  /* Update link styles if needed */
+  .about-section a {
+    color: #337ab7;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .about-section a:hover {
+    color: #23527c;
+  }
+
+
+.href-one {
+    font-size: 1.04em;
+    font-family: 'Lato', sans-serif;
+    text-decoration:double !important;
+    color: #6a43b8 !important;
+}
+:hover.href-one {
+    color: #936ce2 !important;
+}
+
+.skills-section {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;    
+    list-style:none;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    padding-left: 25%;
+    padding-right: 25%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    color: #1f1e1e;
+}
+
+.skills-section h2 {
+    color: #53efa9;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.skills-section h3 {
+    font-family: 'Lato', sans-serif;
+    margin: 5px;
+    color: #f3fbf7;
+
+}
+.skills-section p {
+    font-family: 'Lato', sans-serif;
+    margin: 5px;
+    color: #d1cfcf;
+
+}
+
+
+.SKILLS-PAGE li{
+    margin: 20px 0;
+    padding: 10px;    
+}
+
+.bar-skills {
+    background: #dde7e0;
+    display: block !important;
+    height: 20px;
+    border: 1px solid #eee;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(.25,.8,.25.1);
+}
+
+.bar-skills:hover {
+    box-shadow: 0 4px 8px #2e2929, 0 2px 5px #4b3f3f;;
+}
+
+.bar-skills span {
+    height: 20px;
+    float: left;
+    background: linear-gradient(135deg, #53efa9 0%, #1b704a 100%);
+}
+.skill-1{
+    width:65% ;
+    animation: skill-1 8s;
+}
+.skill-2{
+    width: 45%;
+    animation: skill-2 8s;
+}
+.skill-3{
+    width: 40%;
+    animation: skill-3 8s;
+}
+.skill-4{
+    width: 35%;
+    animation: skill-4 8s;
+}
+.skill-5{
+    width: 60%;
+    animation: skill-5 8s;
+}
+.skill-6{
+    width: 65%;
+    animation: skill-6 8s;
+}
+.skill-7{
+    width: 50%;
+    animation: skill-7 8s;
+}
+
+@keyframes skill-1{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 65%;
+    }
+}
+@keyframes skill-2{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 45%;
+    }
+}
+@keyframes skill-3{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 40%;
+    }
+}
+@keyframes skill-4{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 35%;
+    }
+}
+@keyframes skill-5{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 60%;
+    }
+}
+@keyframes skill-6{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 65%;
+    }
+}
+@keyframes skill-7{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 50%;
+    }
+}
+
+/* Your existing CSS styles */
+
+/* Loading Screen Styles */
+.loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  .loader {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+    z-index: 99999;
+  }
+  
+  /* Keyframe Animation */
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+footer{
+    background-color: rgb(144, 144, 144);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.contacts-section {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.footer-container{
+    width: 100%;
+    padding: 50px 20px 15px;
+}
+
+.link-icons {
+    font-size:x-large;
+    display: flex;
+    justify-content: center;
+}
+
+.link-icons a{
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 50%;
+    align-items: center;
+}
+
+.link-icons a i {
+    font-size: 1.5em;
+    color: black;
+    opacity: 0.9;
+}
+
+.link-icons a i:hover {
+    color: white;
+    transition: 0.4s;
+}
+
+.footer-nav {
+    margin: 20px 0;
+}
+
+.footer-nav ul {
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: center; 
+}
+
+.footer-nav ul li a{
+    color: rgb(5, 5, 5);
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1em;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.footer-nav ul li a:hover {
+    color: white;
+}
+
+.no-bullet {
+    list-style: none;
+}
+
+.footerbottom {
+    background-color: rgb(144, 144, 144);
+    padding: 20px;
+    text-align: center;
+
+}
+
+.footerbottom p {
+    color: black;
+}
+
+.designer {
+    opacity: 0.8;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px, 5px;
 }
