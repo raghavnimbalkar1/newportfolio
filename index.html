@@ -6,28 +6,43 @@
     <link rel="stylesheet" href="public/styles/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="icon" type="image/x-icon" href="images/logo.png">
-    <title>MyFolio</title>
+    <title>Raghav Nimbalkar</title>
 </head>
 <body class="bodyclass">
-    <body class="bodyclass-about">
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <a href="index.html"><img class="logomain" src="images/logo.png" alt="logo"></a>
-        </nav>
-
 
     <div class="main-page">
-        <a href="/about.html" target="_blank"><img class="about-pic" src="images/about.png" alt="aboutpage"></a> 
-        <a href="/skills.html" target="_blank"><img class="skills-pic" src="images/skills.png" alt="skillspage"></a>           
-        <a href="/project.html" target="_blank"><img class="projects-pic" src="images/projects.png" alt="projectspage"></a>
-        <a href="/contact.html" target="_blank"><img class="contacts-pic" src="images/contact.png" alt="contactspage"></a>
+        <div class="scroll-container">
+            <a href="#about-scroll"><img class="about-pic" src="images/about.png" alt="aboutpage"></a> 
+            <a href="#skills-scroll"><img class="skills-pic" src="images/skills.png" alt="skillspage"></a>           
+            <a href="#projects-scroll"><img class="projects-pic" src="images/projects.png" alt="projectspage"></a>
+            <a href="#contact-scroll"><img class="contacts-pic" src="images/contact.png" alt="contactspage"></a>
+        </div>
     </div>
 
 
     <div class="video-back">
-        <video autoplay loop muted plays-inline>
+        <video autoplay loop muted plays-inline class="playback">
             <source src="images/background.mp4" type="video/mp4"> 
         </video>
 
+    </div>
+    <div id="about-scroll" class="ABOUT-PAGE">
+        <h1>About</h1>
+    </div>
+
+
+    <div id="skills-scroll" class="SKILLS-PAGE">
+        <h1>Skills</h1>
+    </div>
+
+
+    <div id="projects-scroll" class="PROJECTS-PAGE">
+        <h1>Projects</h1>
+    </div>
+
+
+    <div id="contact-scroll" class="CONTACT-PAGE">
+        <h1>Contact</h1>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>

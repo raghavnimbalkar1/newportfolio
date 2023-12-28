@@ -2,37 +2,67 @@
     height: 100vh;
     width: 100vw;
     margin: 0rem;
-    overflow: hidden;
-}
-
-.video-back {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    height: 110%;
-    width: 120%;
+    overflow: scroll;
     animation: 1s ease-out 0s 1 slideInLeft;
 }
 
+.navbar {
+    position: relative;
+    z-index: -3;
+
+}
+.video-back {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 110%;
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    animation: 1s ease-out 0s 1 slideInLeft;
+}
+
+.playback {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.scroll-container {
+    /* Ensure it's wide enough to contain all elements in a row */
+    display: flex;
+    gap: 4vmin;
+    position: relative;
+    top: 20%;
+}
+
+@media (max-width: 767px) {
+    .scroll-container {
+        display: inline-block; /* Change the display property for mobile screens */
+        white-space: normal; /* Allow elements to wrap */
+        overflow-x: hidden; /* Hide horizontal scrollbar */
+    }
+
+    /* Adjust individual element styles for smaller mobile screens */
+    .about-pic,
+    .skills-pic,
+    .projects-pic,
+    .contacts-pic {
+        display: inline-block; /* Change the display property for mobile screens */
+        width: 100%; /* Make elements occupy full width */
+        /* Additional styles as needed */
+    }
+
+}
 
 * {
     font-family: Berlin Sans FB;
     margin: 0;
     padding: 0;
-}
-
-:hover.navbar-brand{
-    color: rgb(173, 170, 168) !important;
-}
-
-:hover.nav-link{
-    color: white !important;
-}
-
-.navbar-brand {
-    padding-left: 2%;
-    color: white !important;
 }
 
 :hover.logo-img{
@@ -44,18 +74,8 @@
     padding: top 10px;;
     transition: 0.2s;
     max-width: 11%;
-    color: white !important;
 
 }
-
-.nav-link {
-    font-size: 1.1vw !important;
-    font-family: Berlin Sans FB;
-    color: rgb(20, 20, 20) !important;
-    margin: 0;
-    padding-right: 2%;
-}
-
 
 .about-pic {
     width: 40vmin;
@@ -102,9 +122,10 @@
 }
 
 .main-page{
-    display: flex;
+    display: inline-flexbox;
     gap: 4vmin;
     position: absolute;
+    right: 5%;
     left: 5%;
     top: 30%;
 
@@ -135,10 +156,10 @@
     height: 100vh;
     width: 100vw;
     margin: 0rem;
-    overflow: hidden;
+    overflow: scroll;
     animation: 1s ease-out 0s 1 slideInLeft;
-
 }
+
 @keyframes slideInLeft {
     0% {
       transform: translateX(-100%);
@@ -163,4 +184,10 @@
 
 :hover.logomain {
     max-width: 12%;
+}
+
+.ABOUT-PAGE {
+    clear: both; /* Clears elements above and displays this on a new line */
+    margin-top: 20px; /* Adjust as needed for spacing */
+    
 }
